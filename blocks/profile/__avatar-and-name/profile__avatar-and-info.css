@@ -1,0 +1,4 @@
+.profile__avatar-and-info {
+    display: flex;
+    align-items: center;
+}

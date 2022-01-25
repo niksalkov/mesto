@@ -1,0 +1,6 @@
+.elements__element-name-and-like {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: 21px;
+}
