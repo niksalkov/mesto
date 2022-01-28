@@ -1,6 +1,7 @@
 .profile__name {
     margin: 0;
     padding: 0;
+    width: 294px;
     font-family: 'Inter', 'Arial', 'Helvetica', sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -8,4 +9,17 @@
     line-height: 48px;
     margin-right: 18px;
     margin-bottom: 8px;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+}   
+
+
+@media screen and (max-width:1023px) {
+    .profile__name {
+        width: 189px;
+        font-size: 27px;
+        line-height: 33px;
+        margin-bottom: 7px;
+    }
 }

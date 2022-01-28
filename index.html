@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta lang="ru">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/index.css">
-    <title>Document</title>
+    <title>mesto</title>
 </head>
 
 <body class="list">
@@ -18,7 +19,7 @@
             <section class="profile">
                 <div class="profile__avatar-and-info">
                     <img class="profile__avatar" src="images/Avatar-profile.jpg" alt="Аватар">
-                    <div class="profile__profile-info">
+                    <div class="profile__info">
                         <div class="profile__name-and-button">
                             <p class="profile__name">Жак-Ив Кусто</p>
                             <div class="profile__edit-button-wrapper">
@@ -34,46 +35,58 @@
                 </div>
             </section>
             <section class="elements">
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Karachaevsk.png" alt="Карачаевск">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Карачаевск</p>
-                        <button" class="elements__element-like-button" ></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Karachaevsk.png" alt="Карачаевск">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Карачаевск</p>
+                            <button" class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Elbrus.png" alt="Эльбрус">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Гора Эльбрус</p>
-                        <button class="elements__element-like-button"></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Elbrus.png" alt="Эльбрус">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Гора Эльбрус</p>
+                            <button class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Dombai.png" alt="Домбай">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Домбай</p>
-                        <button class="elements__element-like-button"></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Dombai.png" alt="Домбай">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Домбай</p>
+                            <button class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Elbrus.png" alt="Эльбрус">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Гора Эльбрус</p>
-                        <button class="elements__element-like-button"></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Elbrus.png" alt="Эльбрус">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Гора Эльбрус</p>
+                            <button class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Dombai.png" alt="Домбай">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Домбай</p>
-                        <button class="elements__element-like-button"></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Dombai.png" alt="Домбай">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Домбай</p>
+                            <button class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
-                <div class="elements__element">
-                    <img class="elements__element-image" src="images/Karachaevsk.png" alt="Карачаево-Черкессия">
-                    <div class="elements__element-name-and-like">
-                        <p class="elements__element-name">Карачаево-Черкессия</p>
-                        <button class="elements__element-like-button"></button>
+                <div class="elements__element-wrapper">
+                    <div class="elements__element">
+                        <img class="elements__element-image" src="images/Karachaevsk.png" alt="Карачаево-Черкессия">
+                        <div class="elements__element-name-and-like">
+                            <p class="elements__element-name">Карачаево-Черкессия</p>
+                            <button class="elements__element-like-button"></button>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -81,8 +94,29 @@
         <footer class="footer">
             <p class="footer__text">© 2020 Mesto Russia</p>
         </footer>
+        <section class="popup">
+            <div class="popup__container">
+                <div class="popup__close-button-container">
+                    <button class="popup__close-button"></button>
+                </div>
+                <form  class="popup__main-container">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <div class="popup__forms">
+                        <div class="popup__name-form">
+                            <input class="popup__name-input" type="text" value="Жак-Ив Кусто">
+                        </div>
+                        <div class="popup__job-form">
+                            <input class="popup__job-input" type="text" value="Исследователь океана">
+                        </div>
+                    </div>
+                    <div class="popup__button-container">
+                        <input type="submit" class="popup__submit-button" value="Сохранить">
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
-
+    <script src="sripts/index.js"></script>
 </body>
 
 </html>

@@ -11,3 +11,11 @@
     opacity: 0.6;
     cursor: pointer;
 }
+
+@media screen and (max-width:1023px) {
+    .profile__edit-button {
+        background-image: url(../../../images/Edit-Button-small.svg);
+        width: 18px;
+        height: 18px;
+    }
+}
