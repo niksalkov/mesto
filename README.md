@@ -6,5 +6,5 @@
 2. БЭМ
 3. JavaScript
 
-### Ссылка на ghjtrn : 
+### Ссылка на проект : 
 https://niksalkov.github.io/mesto/
