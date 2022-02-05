@@ -4,6 +4,10 @@
     height: 32px;
     border: none;
     background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    margin-left: 100%;
+    margin-bottom: 8px;
+    
 }
 
 .popup__close-button:hover {
@@ -17,6 +21,8 @@
         background-image: url(../../../images/Close-Icon-mobile.svg);
         width: 20px;
         height: 20px;
+        margin-left: 262px;
+        margin-bottom: 16px;
     }
     
 }
